@@ -15,11 +15,12 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Attacker")
+        var health = other.GetComponent<Health>();
+        var attacker = other.GetComponent<Attacker>();
+        if (health && attacker)
         {
-            Destroy(gameObject);
-            var health = other.GetComponent<Health>();
             health.DealDamage(damage);
+            Destroy(gameObject);
         }
     }
 }

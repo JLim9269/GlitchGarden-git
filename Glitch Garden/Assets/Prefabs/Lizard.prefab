@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114823874814548106}
   m_Layer: 0
   m_Name: Lizard
-  m_TagString: Attacker
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  damage: 100
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 2}
+  durationOfVFX: 1
 --- !u!114 &114826758559574772
 MonoBehaviour:
   m_ObjectHideFlags: 1
